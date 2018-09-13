@@ -92,5 +92,14 @@
                 </div>
             </div>
         </div>
+
+
+        <form action="/press" method="post">
+            @csrf
+            <input type="text" name="title">
+            <input type="text" name="text">
+            <input type="text" name="lang">
+            <button type="submit">submit</button>
+        </form>
     </body>
 </html>
